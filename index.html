@@ -9,26 +9,40 @@
 
         <!-- The main CSS file -->
         <link href="assets/css/clockStyle.css" rel="stylesheet" />
-
-	</head>
-	<body>
-    <div class="timeQuote">
-        <span>Waste It Wisely</span>
-    </div>
-		<div id="clock" class="dark">
-            <div class="display">
-                <div class="weekdays"></div>
-                <div class="ampm"></div>
-                <div class="alarm"></div>
-                <div class="digits"></div>
-            </div>
-		</div>
+        <link href="assets/css/onepage-scroll/onepage-scroll.css" rel="stylesheet"/>
 
 
         <!-- JavaScript Includes -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-beta1/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-beta1/jquery.min.js"></script>
+        <script src="assets/js/momentjs/moment.js"></script>
         <script src="assets/js/clockSample.js"></script>
+        <script src="assets/js/onepage-scroll/jquery.onepage-scroll.js"></script>
+
+	</head>
+	<body>
+        <div class="main">
+           <section>
+               <div class="timeQuote">
+                   <span>Waste It Wisely</span>
+               </div>
+               <div id="clock" class="dark">
+                   <div class="display">
+                       <div class="weekdays"></div>
+                       <div class="ampm"></div>
+                       <div class="alarm"></div>
+                       <div class="digits"></div>
+                   </div>
+               </div>
+           </section>
+        </div>
+
+        <!-- Custom JavaScript Includes -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".main").onepage_scroll();
+            });
+        </script>
+
 
 	</body>
 </html>

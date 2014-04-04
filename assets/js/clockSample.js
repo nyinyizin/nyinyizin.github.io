@@ -1,5 +1,7 @@
-$(function(){
 
+$(document).ready(function(){
+
+    console.log("hello");
     // Cache some selectors
 
     var clock = $('#clock'),
@@ -96,12 +98,8 @@ $(function(){
         // Schedule this function to be run again in 1 sec
         setTimeout(update_time, 1000);
 
+
+
     })();
-
-    // Switch the theme
-
-    $('a.button').click(function(){
-        clock.toggleClass('light dark');
-    });
 
 });
