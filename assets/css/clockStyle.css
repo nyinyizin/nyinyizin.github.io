@@ -15,7 +15,7 @@
 
 
 html{
-    background:url('../img/bg.jpg') #dbe4e6;
+    background-color:  #dbe4e6;
     overflow:hidden;
 }
 
@@ -98,7 +98,6 @@ section, footer, header, aside{
 }
 
 #clock.light .alarm{
-    background:url('../img/alarm_light.jpg');
 }
 
 #clock.light .display{
@@ -129,7 +128,6 @@ section, footer, header, aside{
 }
 
 #clock.dark .alarm{
-    background:url('../img/alarm_dark.jpg');
 }
 
 #clock.dark .display{
@@ -336,7 +334,6 @@ section, footer, header, aside{
     width:16px;
     height:16px;
     bottom:20px;
-    background:url('../img/alarm_light.jpg');
     position:absolute;
     opacity:0.2;
 }
