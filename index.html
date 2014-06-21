@@ -3,15 +3,19 @@
 	<head>
 		<title>Waste It Wisely</title>
 
+        <!-- Adding META Tag for SlideBar -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
         <!-- Adding Favicon -->
         <link href="assets/img/ironman_favicon.png" rel="shortcut icon" type="image/png">
 
 
         <!-- The main CSS file -->
+
         <link href="assets/css/clockStyle.css" rel="stylesheet" />
         <link href="assets/css/onepage-scroll/onepage-scroll.css" rel="stylesheet"/>
-
-
+        <link href="assets/css/slidebars/slidebars.min.css" rel="stylesheet"/>
+        <link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet"/>
         <!-- JavaScript Includes -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-beta1/jquery.min.js"></script>
         <script src="assets/js/momentjs/moment.js"></script>
@@ -29,29 +33,41 @@
             ga('send', 'pageview');
 
         </script>
-        
+
 	</head>
 	<body>
-        <div class="main">
-           <section>
-               <div class="timeQuote">
-                   <span>Waste It Wisely</span>
-               </div>
-               <div id="clock" class="dark">
-                   <div class="display">
-                       <div class="weekdays"></div>
-                       <div class="ampm"></div>
-                       <div class="alarm"></div>
-                       <div class="digits"></div>
-                   </div>
-               </div>
-           </section>
-        </div>
+        <div id="sb-site">
 
+            <div class="main">
+
+               <section>
+                   <div class="timeQuote">
+                       <span>Waste It Wisely</span>
+                   </div>
+                   <div id="clock" class="dark">
+                       <div class="display">
+                           <div class="weekdays"></div>
+                           <div class="ampm"></div>
+                           <div class="digits" style="width: 260px;"></div>
+                       </div>
+                   </div>
+               </section>
+            </div>
+        </div>
+        <div class="sb-slidebar sb-left">
+
+        </div>
+        <div class="sb-slidebar sb-right">
+
+        </div>
+        <!-- JavaScript Library References -->
+        <script src="assets/js/slidebars/slidebars.min.js" ></script>
         <!-- Custom JavaScript Includes -->
         <script type="text/javascript">
             $(document).ready(function(){
+                // Register OnePage scroll jss
                 $(".main").onepage_scroll();
+                $.slidebars();
             });
         </script>
 
