@@ -23,6 +23,8 @@ twitter_username: jogyi_goddard
 github_username:  nyinyizin
 
 # Build settings
+sass:
+  style: compressed
 markdown: kramdown
 
 plugins:
