@@ -7,17 +7,19 @@ tags: [ general, AWS ]
 ---
 
 ##  Download the dynamodump
--  Get [dynamodump] from GitHub.
+-  Get [dynamodump](https://github.com/bchew/dynamodump) from GitHub.
 
 ## Install boto3
 - To install boto3, need to pre-install the python package manager (pip)
+```
 pip install boto3
+```
 
 ## Get IAM Access Keys
 - Get access key from IAM user (Access key ID, Secret access key)
 
 ### Configure & Export
-- Change directory to where [dynamodump] is downloaded and execute the following command in terminal.
+- Change directory to where [dynamodump](https://github.com/bchew/dynamodump) is downloaded and execute the following command in terminal.
 - Export all the tables in Tokyo Region (ap-northeast-1)
 ```
 python dynamodump.py -m backup -r ap-northeast-1 -s "*" --accessKey ACCESS_KEY_ID --secretKey SECRET_ACCESS_KEY
@@ -40,6 +42,7 @@ INFO:root:Backup of table(s) TABLE_NAME completed!
 ### Exported Data
 - Exported data is stored under **dynamodump** subfolder with named **dump**
 - Both schema and data of the data will be exported by tool.
+
 ### Restore AWS DynamoDB tables
 - Restore AWS DynamoDB all tables by the following commands
 ```

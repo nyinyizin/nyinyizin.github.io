@@ -18,7 +18,7 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   VENI - VIDI - VICI
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nyinyizin.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jogyi_goddard
 github_username:  nyinyizin
 
@@ -31,6 +31,7 @@ kramdown:
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
