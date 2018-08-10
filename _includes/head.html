@@ -1,12 +1,95 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Expires" content="1">
-    {% include fav_icon.html %}
-    {% include css_ref.html %}
-    {% include google_analytics.html %}
+  <!doctype html>
+  <html amp lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+     <meta name="Description" content="{{page.description}}">
+     <title>{{page.title}}</title>
 
-    {% seo %}
-  </head>
+         {% include fav_icon.html %}
+         <style amp-custom>
+         #content{
+           max-width: 800px;
+           margin: auto;
+         }
+         #content a:hover{
+           color: #5badf0;
+         }
+         #wrapper{
+           padding: 50px 40px 50px 40px;
+         }
+         #header{
+           margin-bottom: 50px;
+           border-bottom: 1px solid #eee;
+           display: block;
+           line-height: 100px;
+           font-size: 40px;
+         }
+         #header a{
+           color: #333;
+           text-decoration: none;
+         }
+         .post-list li, .post header, .post-body{
+           list-style-type: none;
+           margin-bottom: 20px;
+           border-bottom: 1px solid #eee;
+           display: block;
+           padding-bottom: 20px;
+           font-size: 19px;
+           line-height: 1.5;
+         }
+
+         .post-list a{
+           color: #333;
+           text-decoration: none;
+         }
+
+         .post-list h2{
+           color: #aaa;
+
+         }
+
+         /* POST CSS */
+         .post header h1{
+           font-size: 30px;
+           color: #222;
+         }
+         .post header h2{
+           font-size: 22px;
+           color: #aaa;
+           font-style: italic;
+         }
+
+         .post-body h2{
+           font-size: 19px;
+         }
+
+         .post-body h3{
+           font-size: 17px;
+         }
+
+         .post-body ul{
+           list-style-type: square;
+           padding-left: 40px;
+         }
+
+         .post-body code{
+
+         }
+         </style>
+     <style amp-boilerplate>
+     body{
+       -webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+       -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+       -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+       animation:-amp-start 8s steps(1,end) 0s 1 normal both
+       }
+       @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+       @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+       @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+       @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+       @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+     </style>
+     <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+     <script async src="https://cdn.ampproject.org/v0.js"></script>
+   </head>

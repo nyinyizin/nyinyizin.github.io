@@ -34,6 +34,16 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Manifest settings (Used to make manifest.json)
+# Edit manifest.json directly with icon information
+manifest_name: jogyi goddard
+manifest_short_name: jogyigoddard # Appears in "Add to home screen" dialogues
+manifest_lang: en
+manifest_background_color: white
+manifest_short_name:
+manifest_display: standalone
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
