@@ -20,7 +20,23 @@ gem "minima", "~> 2.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-paginate'
+  gem 'jekyll-mentions'
 end
+
+gem 'jekyll-watch'
+gem 'jekyll-assets'
+gem 'jekyll-redirect-from'
+gem 'jekyll-sitemap'
+gem 'kramdown'
+gem 'puma'
+gem 'rack-jekyll'
+gem 'rake'
+gem 'sprockets', '~> 3.7'
+gem 'sprockets-es6'
+gem 'uglifier'
+gem 'jekyll-archives'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -16,6 +16,8 @@
           </header>
           <section class="post-body" markdown="1">
             {{page.content | markdownify | hilightify }}
+            <br/></br>
+            <div class="meta">{{page.date | date: '%B %d, %Y'}}</div>
           </section>
         </article>
       </section>

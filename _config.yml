@@ -33,7 +33,31 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-assets
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - kramdown
+  - uglifier
+  - jekyll-archives
 
+paginate: 2
+include:
+  - _pages
+exclude:
+  - CNAME
+  - README.md
+jekyll-mentions:
+  base_url: https://twitter.com
+twitter:
+  username: jogyi_goddard
+  card: summary
+social:
+  name: Nyi Nyi Zin
+  links:
+    - https://twitter.com/jogyi_goddard
+    - https://github.com/nyinyizin
 # Manifest settings (Used to make manifest.json)
 # Edit manifest.json directly with icon information
 manifest_name: nyinyizin
@@ -43,6 +67,20 @@ manifest_background_color: white
 manifest_short_name:
 manifest_display: standalone
 
+sitemap:
+  file: '/sitemap.xml'
+  include_posts:
+    - '/index.html'
+  change_frequency_name: 'change_frequency'
+  priority_name: 'priority'
+
+jekyll-archives:
+  enabled: ['categories', 'tags', 'year']
+  layout: archive
+  permalinks:
+    year: '/blog/years/:year/'
+    category: '/blog/categories/:name/'
+    tag: '/blog/tags/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -55,3 +93,4 @@ manifest_display: standalone
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude: ['config.ru', 'CONTRIBUTING.md', 'Gemfile', 'Gemfile.lock', 'GLOSSARY', 'Procfile', 'Rakefile', 'README.md', 'vendor', 'LICENSE']

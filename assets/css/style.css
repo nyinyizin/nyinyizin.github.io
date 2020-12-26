@@ -104,3 +104,12 @@ body{
 	color: #4B4B4B;
 	text-transform: uppercase;
 }
+
+.footer{
+  width: 100%;
+  text-align: center;
+}
+
+.footer a{
+  text-decoration: none;
+}
