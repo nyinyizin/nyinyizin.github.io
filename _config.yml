@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: jogyi goddard
+title: Nyi
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   VENI - VIDI - VICI
@@ -36,7 +36,7 @@ plugins:
 
 # Manifest settings (Used to make manifest.json)
 # Edit manifest.json directly with icon information
-manifest_name: jogyi goddard
+manifest_name: nyinyizin
 manifest_short_name: jogyigoddard # Appears in "Add to home screen" dialogues
 manifest_lang: en
 manifest_background_color: white

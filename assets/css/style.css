@@ -1,6 +1,14 @@
+body{
+  background-color: #ffffff;
+}
+
 #content{
-  max-width: 800px;
+  max-width: 100%;
+  background-color: #ffffff;
   margin: auto;
+}
+#content ul{
+  padding: 0px;
 }
 #content a:hover{
   color: #5badf0;
@@ -9,10 +17,10 @@
   padding: 50px 40px 50px 40px;
 }
 #header{
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #eee;
   display: block;
-  line-height: 100px;
+  line-height: 75px;
   font-size: 40px;
 }
 #header a{
@@ -25,14 +33,32 @@
   border-bottom: 1px solid #eee;
   display: block;
   padding-bottom: 20px;
-  font-size: 19px;
-  line-height: 1.5;
+  font-size: 15px;
 }
 
 .post-list a{
-  color: #333;
-  text-decoration: none;
+	color: #4B4B4B;
+	text-decoration: none;
+  	background-color: #CAD2D4;
+  	padding: 1px 5px;
+  	border-radius:2px 2px 2px 2px;
+  	-moz-border-radius:2px 2px 2px 2px;
+  	-webkit-box-decoration-break: clone;
+  	box-decoration-break: clone;
 }
+
+
+.post-list a:hover {
+	color: #353535;
+	text-decoration: none;
+  	background-color: #C4C9CA;
+  	padding: 1px 5px;
+  	border-radius:2px 2px 2px 2px;
+  	-moz-border-radius:2px 2px 2px 2px;
+  	-webkit-box-decoration-break: clone;
+  	box-decoration-break: clone;
+ }
+
 
 .post-list h2{
   color: #aaa;
@@ -42,10 +68,12 @@
 /* POST CSS */
 .post header h1{
   font-size: 30px;
+  line-height: 33px;
   color: #222;
 }
 .post header h2{
   font-size: 22px;
+  line-height: 28px;
   color: #aaa;
   font-style: italic;
 }
@@ -63,6 +91,16 @@
   padding-left: 40px;
 }
 
-.post-body code{
-  
+.post-body p{
+  line-height: 33px;
+}
+
+
+.meta {
+  	font-weight: 400;
+  	-webkit-font-smoothing: antialiased;
+  	font-size: 13px;
+  	letter-spacing: 1px;
+	color: #4B4B4B;
+	text-transform: uppercase;
 }
